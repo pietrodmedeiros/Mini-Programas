@@ -1,0 +1,21 @@
+<html lang="pt-br">
+    <meta charset="utf-8">
+
+    <script>
+        do {
+        var continuar = 'S'  
+        var aluno1 = prompt('Digite o nome do aluno: ')
+        var nota1 = parseFloat(prompt('Digite a nota de ' + aluno1 + ' na primeira prova'))
+        var nota2 = parseFloat(prompt('Digite a nota de ' + aluno1 + ' na segunda prova'))
+        var nota3 = parseFloat(prompt('Digite a nota de ' + aluno1 + ' na terceira prova'))
+        var nota_final = (nota1 + nota2 + nota3)/3
+        if (nota_final >= 6) {
+        alert(aluno1 + ' está aprovado')
+        } else {
+        alert(aluno1 + ' precisará de prova de recuperação')
+        }
+        continuar = prompt('Inserir outro aluno? [S/N] ').toUpperCase()
+        } while(continuar == 'S') 
+    </script>
+
+</html>
