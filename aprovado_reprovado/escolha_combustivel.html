@@ -1,0 +1,23 @@
+<html lang="pt-br">
+    <meta charset="utf-8">
+    
+    <script>
+        
+        do {
+            continuar = 'S'
+            gasolina = parseFloat(prompt('Digite o valor da gasolina: '))
+            alcool = parseFloat(prompt('Digite o valor do álcool:'))
+            utilize = (alcool / gasolina)
+            if(utilize > 0.7) {
+                alert('Abasteça com gasolina!')
+            } else if(utilize < 0.7) {
+                alert('Abasteça com álcool!')
+            } else {
+            alert('Tanto faz, abasteça com um ou outro!')
+            }
+            continuar = prompt('Digite "S" para fazer novo cálculo ou qualquer tecla para sair').toUpperCase()
+        } while(continuar == 'S')
+
+//Pietro de Deus Medeiros
+    </script>
+</html>
