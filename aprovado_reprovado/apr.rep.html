@@ -4,12 +4,13 @@
     <script>
         do {
         var continuar = 'S'  
+        var media = prompt('Digite a nota mínima para aprovação (média): ')
         var aluno1 = prompt('Digite o nome do aluno: ')
         var nota1 = parseFloat(prompt('Digite a nota de ' + aluno1 + ' na primeira prova'))
         var nota2 = parseFloat(prompt('Digite a nota de ' + aluno1 + ' na segunda prova'))
         var nota3 = parseFloat(prompt('Digite a nota de ' + aluno1 + ' na terceira prova'))
         var nota_final = (nota1 + nota2 + nota3)/3
-        if (nota_final >= 6) {
+        if (nota_final >= media) {
         alert(aluno1 + ' está aprovado')
         } else {
         alert(aluno1 + ' precisará de prova de recuperação')
